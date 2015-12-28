@@ -260,7 +260,8 @@ public class Statistics : MonoBehaviour {
 				if(lap == RaceManager.instance.totalLaps && RaceManager.instance.showRaceInfoMessages && gameObject.tag == "Player"){
                     //RaceUI.instance.StartCoroutine(RaceUI.instance.ShowRaceInfo("Final Lap!",2.0f));
                     Debug.Log("Ultima vuelta");
-                    DestroyObject(BanderaPartida);
+					Constantes.ultimaVuelta=true;
+                    
 				}
 			}
 			else{

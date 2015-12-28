@@ -7,21 +7,16 @@ public class controladorPrincipalInv2: MonoBehaviour {
 	public Transform target;
 	private Car_Controller car_controller;
 	CardboardHead head = null;
-    
-    void Start () {
+
+	void Start () {
 		//carinput=GetComponent< IRDSCarControllerAI > ();
 		//car = IRDSStatistics.GetCurrentCar();
 		head = Camera.main.GetComponent<StereoController>().Head;
-		
+
 	}
 
     // Update is called once per frame
     void Update() {
-
-		Debug.Log ("touchFinishLine: "+Constantes.touchFinishLine);
-		if (Constantes.touchFinishLine) {
-			DestroyObject(GameObject.FindGameObjectWithTag ("BanderaPartida"));
-		}
 
 		//Debug.Log ("X HEAD: "+head.transform.eulerAngles.x);
 		//Debug.Log ("Y HEAD: "+head.transform.eulerAngles.y);
@@ -34,7 +29,6 @@ public class controladorPrincipalInv2: MonoBehaviour {
 		}
 
 		if (target && GameObject.FindGameObjectWithTag ("Player")) {
-
 
 			/**
              *    ALGORITMO PARA DOBLAR CON LA CABEZA 

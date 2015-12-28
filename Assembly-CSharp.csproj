@@ -70,6 +70,7 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+     <Compile Include="Assets\ControllerBanderas.cs" />
      <Compile Include="Assets\Examples\Scripts\ConsoleBase.cs" />
      <Compile Include="Assets\Examples\Scripts\LogView.cs" />
      <Compile Include="Assets\Examples\Scripts\MenuBase.cs" />
@@ -211,6 +212,7 @@
      <Compile Include="Assets\Scripts\stop.cs" />
      <Compile Include="Assets\Scripts\volver.cs" />
      <Compile Include="Assets\fbcambioescena.cs" />
+     <Compile Include="Assets\resetearPreferenciasJugador.cs" />
      <Compile Include="Assets\testgithub.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Required\Shaders\Glassreflect2D.shader" />
