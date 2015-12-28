@@ -18,8 +18,10 @@ public class controladorPrincipalInv2: MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-		
-
+		Debug.Log ("touchFinishLine: "+Constantes.touchFinishLine);
+		if (Constantes.touchFinishLine) {
+			DestroyObject(GameObject.FindGameObjectWithTag ("BanderaPartida"));
+		}
 
 		//Debug.Log ("X HEAD: "+head.transform.eulerAngles.x);
 		//Debug.Log ("Y HEAD: "+head.transform.eulerAngles.y);

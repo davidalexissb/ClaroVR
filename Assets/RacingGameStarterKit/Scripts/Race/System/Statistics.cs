@@ -250,11 +250,12 @@ public class Statistics : MonoBehaviour {
 			}
 			
 			lap++;
+
 		}
 		else{
 			if(lap < RaceManager.instance.totalLaps){
 				lap++; 
-				
+
 				//Show the final lap indication text if set to true in RaceManager
 				if(lap == RaceManager.instance.totalLaps && RaceManager.instance.showRaceInfoMessages && gameObject.tag == "Player"){
                     //RaceUI.instance.StartCoroutine(RaceUI.instance.ShowRaceInfo("Final Lap!",2.0f));
@@ -353,6 +354,12 @@ public class Statistics : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other){
 		//Finish line
+
+
+		if (gameObject.tag == "Player" && other.tag == "FinishLine") {
+			Debug.Log ("FinishLine PLAYER");
+			Constantes.touchFinishLine=true;
+		}
 		if(other.tag == "FinishLine" && passedAllNodes){
 			NewLap();
 		}
