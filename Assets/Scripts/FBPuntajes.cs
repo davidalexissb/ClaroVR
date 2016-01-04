@@ -78,7 +78,6 @@ public class FBPuntajes : MonoBehaviour {
         var scoredata = new Dictionary<string, string>();
         scoredata["score"] = mipuntaje;
         
-        
         FB.API("/me/scores", HttpMethod.POST, delegate (IGraphResult result)
         {
             Debug.Log("setscore" + result.RawResult);
@@ -129,26 +128,6 @@ public class FBPuntajes : MonoBehaviour {
         );
     }
 
-    public void FeedShare(string mipuntaje) 
-    {FB.ShareLink(new System.Uri("http://umbracorp.cl"), //link
-        "Claro Racing Game", //linkName
-        "esta es una descripción de prueba"+ mipuntaje , //linkDescription
-        new System.Uri("https://static.betazeta.com/www.wayerless.com/up/2013/12/claro1.png"), //picture
-        LogCallback //callback
-        );}
-
-
- private void LogCallback(IShareResult result) {
-    if (result.Cancelled || !string.IsNullOrEmpty(result.Error)) {
-        Debug.Log("ShareLink Error: "+result.Error);
-    } else if (!string.IsNullOrEmpty(result.PostId)) {
-        // Print post identifier of the shared content
-        Debug.Log(result.PostId);
-    } else {
-        // Share succeeded without postID
-        Debug.Log("ShareLink success!");
-    }
-}
 
     private void LaunchProjectile()
     {
