@@ -78,7 +78,6 @@ public class FBPuntajes : MonoBehaviour {
         var scoredata = new Dictionary<string, string>();
         scoredata["score"] = mipuntaje;
         
-        
         FB.API("/me/scores", HttpMethod.POST, delegate (IGraphResult result)
         {
             Debug.Log("setscore" + result.RawResult);
@@ -129,6 +128,8 @@ public class FBPuntajes : MonoBehaviour {
         );
     }
 
+<<<<<<< HEAD
+=======
     public void FeedShare(string mipuntaje) 
     {FB.ShareLink(new System.Uri("http://umbracorp.cl"), //link
         "Claro Racing Game", //linkName
@@ -149,6 +150,7 @@ public class FBPuntajes : MonoBehaviour {
         Debug.Log("ShareLink success!");
     }
 }
+>>>>>>> parent of 5b514b1... Revert "cambio share"
 
     private void LaunchProjectile()
     {
