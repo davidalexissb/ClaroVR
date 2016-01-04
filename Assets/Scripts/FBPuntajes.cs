@@ -130,10 +130,10 @@ public class FBPuntajes : MonoBehaviour {
     }
 
     public void FeedShare(string mipuntaje) 
-    {FB.ShareLink(new System.Uri("http://umbracorp.cl"), //link
+    {FB.ShareLink(new System.Uri("https://enterlinkhere.com"), //link
         "Claro Racing Game", //linkName
-        "esta es una descripción de prueba"+ mipuntaje , //linkDescription
-        new System.Uri("https://static.betazeta.com/www.wayerless.com/up/2013/12/claro1.png"), //picture
+        "LinkDescription"+ mipuntaje , //linkDescription
+        new System.Uri("https://enterimagehere.com"), //picture
         LogCallback //callback
         );}
 
