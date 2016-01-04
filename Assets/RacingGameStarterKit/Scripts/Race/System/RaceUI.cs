@@ -179,7 +179,7 @@ public class RaceUI : MonoBehaviour {
 
     void HandlePanelActivation() {
         //if not paused, set all other panels active to false except from the race panel
-        if (!RaceManager.instance.racePaused) {
+       /* if (!RaceManager.instance.racePaused) {
             racePanel.SetActive(true);
             pausePanel.SetActive(false);
             raceCompletePanel.SetActive(false);
@@ -208,7 +208,7 @@ public class RaceUI : MonoBehaviour {
 
             if (knockoutPanel){
 				knockoutPanel.SetActive(false);
-			}
+			}*/
 			
 			//loop through the total number of cars & show their race standings
 			if(raceStandings.Count > 0){
@@ -239,14 +239,14 @@ public class RaceUI : MonoBehaviour {
 		}
 		
 		
-		//if the player is knocked out, set all other panels active to false except from the ko panel
+	/*	//if the player is knocked out, set all other panels active to false except from the ko panel
 		if(RaceManager.instance.raceKO){
 			pausePanel.SetActive(false);
 			racePanel.SetActive(false);
 			raceCompletePanel.SetActive(false);
 			knockoutPanel.SetActive(true);
 		}
-	}
+	}*/
 	
 	//Used to show useful race info
 	public IEnumerator ShowRaceInfo(string info,float time){
