@@ -33,7 +33,7 @@ public class ColliderCoints : MonoBehaviour {
             
             
             GetComponent<AudioSource>().PlayOneShot(turbo);
-            car_controller.boost = 100000f;// buscar funcion para activar turbo
+            car_controller.boost = 60000f;// buscar funcion para activar turbo
             car_controller.topSpeed = 300;
             car_controller.engineTorque = 1550;
             InvokeRepeating("LaunchProjectile", 1, 0); // en segundos */

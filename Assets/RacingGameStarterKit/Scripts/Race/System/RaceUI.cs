@@ -179,7 +179,7 @@ public class RaceUI : MonoBehaviour {
 
     void HandlePanelActivation() {
         //if not paused, set all other panels active to false except from the race panel
-        if (!RaceManager.instance.racePaused) {
+       /* if (!RaceManager.instance.racePaused) {
             racePanel.SetActive(true);
             pausePanel.SetActive(false);
             raceCompletePanel.SetActive(false);
@@ -245,7 +245,7 @@ public class RaceUI : MonoBehaviour {
 			racePanel.SetActive(false);
 			raceCompletePanel.SetActive(false);
 			knockoutPanel.SetActive(true);
-		}
+		} */
 	}
 	
 	//Used to show useful race info

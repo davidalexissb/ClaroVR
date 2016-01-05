@@ -1,10 +1,9 @@
-﻿//Statistics.cs keeps track of the racer's rank, lap, race times, race state, saving best times, split times , wrong way detecion etc.
+//Statistics.cs keeps track of the racer's rank, lap, race times, race state, saving best times, split times , wrong way detecion etc.
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
 public class Statistics : MonoBehaviour {
-    public GameObject BanderaPartida;
 	
 	//Int
 	public int rank;//current rank
