@@ -128,29 +128,6 @@ public class FBPuntajes : MonoBehaviour {
         );
     }
 
-<<<<<<< HEAD
-=======
-    public void FeedShare(string mipuntaje) 
-    {FB.ShareLink(new System.Uri("http://umbracorp.cl"), //link
-        "Claro Racing Game", //linkName
-        "esta es una descripción de prueba"+ mipuntaje , //linkDescription
-        new System.Uri("https://static.betazeta.com/www.wayerless.com/up/2013/12/claro1.png"), //picture
-        LogCallback //callback
-        );}
-
-
- private void LogCallback(IShareResult result) {
-    if (result.Cancelled || !string.IsNullOrEmpty(result.Error)) {
-        Debug.Log("ShareLink Error: "+result.Error);
-    } else if (!string.IsNullOrEmpty(result.PostId)) {
-        // Print post identifier of the shared content
-        Debug.Log(result.PostId);
-    } else {
-        // Share succeeded without postID
-        Debug.Log("ShareLink success!");
-    }
-}
->>>>>>> parent of 5b514b1... Revert "cambio share"
 
     private void LaunchProjectile()
     {

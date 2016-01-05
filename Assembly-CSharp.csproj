@@ -70,7 +70,6 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
-     <Compile Include="Assets\ControllerBanderas.cs" />
      <Compile Include="Assets\Examples\Scripts\ConsoleBase.cs" />
      <Compile Include="Assets\Examples\Scripts\LogView.cs" />
      <Compile Include="Assets\Examples\Scripts\MenuBase.cs" />
@@ -189,6 +188,7 @@
      <Compile Include="Assets\Scripts\ColliderCoints.cs" />
      <Compile Include="Assets\Scripts\Constantes.cs" />
      <Compile Include="Assets\Scripts\Constantes1.cs" />
+     <Compile Include="Assets\Scripts\ControllerBanderas.cs" />
      <Compile Include="Assets\Scripts\FBInicio.cs" />
      <Compile Include="Assets\Scripts\FBPuntajes.cs" />
      <Compile Include="Assets\Scripts\FBcambioescena.cs" />
@@ -206,13 +206,14 @@
      <Compile Include="Assets\Scripts\init.cs" />
      <Compile Include="Assets\Scripts\puntajesScene.cs" />
      <Compile Include="Assets\Scripts\quit.cs" />
+     <Compile Include="Assets\Scripts\resetearPreferenciasJugador.cs" />
      <Compile Include="Assets\Scripts\rotateController.cs" />
+     <Compile Include="Assets\Scripts\setcar.cs" />
      <Compile Include="Assets\Scripts\setscore.cs" />
      <Compile Include="Assets\Scripts\setuplens.cs" />
      <Compile Include="Assets\Scripts\stop.cs" />
      <Compile Include="Assets\Scripts\volver.cs" />
      <Compile Include="Assets\fbcambioescena.cs" />
-     <Compile Include="Assets\resetearPreferenciasJugador.cs" />
      <Compile Include="Assets\testgithub.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Required\Shaders\Glassreflect2D.shader" />
@@ -241,11 +242,17 @@
      <None Include="Assets\Required\Shaders\AlphaTest-Diffuse-GEqual.shader" />
      <None Include="Assets\Resources\Textures\VFX\ShadowProjection.shader" />
      <None Include="Assets\RacingGameStarterKit\Changelog.txt" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

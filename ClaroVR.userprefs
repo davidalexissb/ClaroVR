@@ -1,13 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/init.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/resetearPreferenciasJugador.cs">
     <Files>
       <File FileName="Assets/Scripts/ColliderCoints.cs" Line="1" Column="1" />
       <File FileName="Assets/RacingGameStarterKit/Scripts/Race/System/Statistics.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/controladorPrincipalInv2.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Constantes.cs" Line="1" Column="1" />
-      <File FileName="Assets/ControllerBanderas.cs" Line="29" Column="3" />
-      <File FileName="Assets/Scripts/init.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Constantes.cs" Line="18" Column="39" />
+      <File FileName="Assets/resetearPreferenciasJugador.cs" Line="13" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
