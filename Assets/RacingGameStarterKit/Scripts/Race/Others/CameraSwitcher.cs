@@ -11,9 +11,9 @@ public class CameraSwitcher : MonoBehaviour {
 	
 	void Start () {
 
-		//Find the main race Cam first
+		/*//Find the main race Cam first
 		PlayerCamera mainCam = GameObject.FindObjectOfType(typeof(PlayerCamera)) as PlayerCamera;
-		cameras.Add(mainCam.GetComponent<Camera>());
+		cameras.Add(mainCam.GetComponent<Camera>());*/
 		
 		//Find all child cameras next
 		if(transform.GetComponentInChildren<Camera>()){

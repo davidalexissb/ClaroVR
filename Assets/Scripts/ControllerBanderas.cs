@@ -14,6 +14,13 @@ public class ControllerBanderas : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!Constantes.touchFinishLine && !Constantes.ultimaVuelta) {
+             BanderaPartida.SetActive (true);
+			BanderaSinTexto.SetActive (false);
+			BanderaFinish.SetActive(false);
+        }
+
+
 		Debug.Log ("touchFinishLine: "+Constantes.touchFinishLine);
 		if (Constantes.touchFinishLine && !Constantes.ultimaVuelta) {
 			

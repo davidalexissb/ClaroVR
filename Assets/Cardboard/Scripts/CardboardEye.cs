@@ -86,7 +86,6 @@ public class CardboardEye : MonoBehaviour {
   void Start() {
     var ctlr = Controller;
     if (ctlr == null) {
-      Debug.LogError("CardboardEye must be child of a StereoController.");
       enabled = false;
       return;
     }
