@@ -47,8 +47,24 @@ public class RaceManager : MonoBehaviour {
 	
 	void Start(){
 		InitializeRace();
+		limpiarlista();
+		ResetBanderas();
+	}
+
+	void ResetBanderas () {
+
+     Constantes.touchFinishLine = false;
+     Constantes.ultimaVuelta = false;
+     Debug.Log ("ResetBanderas");
 	}
 	
+
+void limpiarlista () {
+Constantes.listaPuntajes = null ;
+Debug.Log ("lista limpia");
+
+}
+
 	void InitializeRace(){
 		switch(_raceType){
 			
