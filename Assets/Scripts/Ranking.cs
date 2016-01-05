@@ -22,7 +22,7 @@ public class Ranking : MonoBehaviour {
 
             Constantes.listaPuntajes = new ArrayList();
 
-            for (int i = 0; i < RankManager.instance.totalRacers-1; i++)
+            for (int i = 0; i < RankManager.instance.totalRacers; i++)
             {
                 Debug.Log("RANKING: " + RankManager.instance.racerRanks[i].racer.GetComponent<Statistics>().rank);
                 Debug.Log("RACE TIME: " + RankManager.instance.racerRanks[i].racer.GetComponent<Statistics>().totalRaceTime);

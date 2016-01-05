@@ -95,7 +95,7 @@ public class Car_Controller : MonoBehaviour {
 		for(int i = 0; i < numberOfGears; i++){
 			gearRatio[i] = Mathf.Lerp(0, topSpeed, ((float)i/(float)(numberOfGears)));
 		}
-		gearRatio[numberOfGears-1] = topSpeed + 50.0f; //ensure the last gear doesn't exceed topSpeed!
+		gearRatio[numberOfGears-1] = topSpeed + 150.0f; //ensure the last gear doesn't exceed topSpeed!
 		
 		//set up audio
 		engineAudioSource.clip = engineSound;
