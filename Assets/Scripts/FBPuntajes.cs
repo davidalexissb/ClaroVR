@@ -131,10 +131,10 @@ public class FBPuntajes : MonoBehaviour {
 
 
     public void FeedShare(string mipuntaje) 
-    {FB.ShareLink(new System.Uri("http://umbracorp.cl"), //link
-        "Claro Racing Game", //linkName
-        "esta es una descripción de prueba"+ mipuntaje , //linkDescription
-        new System.Uri("https://static.betazeta.com/www.wayerless.com/up/2013/12/claro1.png"), //picture
+	{FB.ShareLink(new System.Uri("http://www.claro.com.pe/"), //link
+		              "Claro Speed Race VR", //linkName
+        "Felicitaciones!"+ mipuntaje , //linkDescription
+		              new System.Uri("http://www.rocket-ed.cl/SpeedRaceClaroVR/icon_512.png"), //picture
         LogCallback //callback
         );}
 
