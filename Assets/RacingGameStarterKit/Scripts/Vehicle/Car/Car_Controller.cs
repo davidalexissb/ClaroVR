@@ -123,7 +123,6 @@ public class Car_Controller : MonoBehaviour {
             if (currentSpeed == 0 && gameObject.tag == "Player")
             {
                 RespawnTimer += 1;
-                Debug.Log("Tiempo iniciando" + RespawnTimer);
                 RespawnTimer++;
             }
 
@@ -134,9 +133,7 @@ public class Car_Controller : MonoBehaviour {
         }
         if (RespawnTimer >= 250)
         {
-            Debug.Log("Tiempo terminado");
-
-            Debug.Log("Respawn");
+            
             Respawn();
 
             RespawnTimer = 0;

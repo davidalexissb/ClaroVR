@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ControllerBanderas : MonoBehaviour {
@@ -21,7 +21,7 @@ public class ControllerBanderas : MonoBehaviour {
         }
 
 
-		Debug.Log ("touchFinishLine: "+Constantes.touchFinishLine);
+		
 		if (Constantes.touchFinishLine && !Constantes.ultimaVuelta) {
 			
 			BanderaPartida.SetActive (false);

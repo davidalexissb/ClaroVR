@@ -58,7 +58,7 @@ public class Ranking : MonoBehaviour {
     }
     private void LaunchProjectile()
     {
-        Debug.Log("terminado");
+        
         Application.LoadLevel("instrucciones3");
     }
 

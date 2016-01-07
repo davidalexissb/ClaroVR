@@ -1,4 +1,4 @@
-﻿/*Race_Manager.cs handles the race logic - countdown, spawning cars, asigning racer names, checking race status, formatting time strings etc */
+/*Race_Manager.cs handles the race logic - countdown, spawning cars, asigning racer names, checking race status, formatting time strings etc */
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -55,13 +55,13 @@ public class RaceManager : MonoBehaviour {
 
      Constantes.touchFinishLine = false;
      Constantes.ultimaVuelta = false;
-     Debug.Log ("ResetBanderas");
+     
 	}
 	
 
 void limpiarlista () {
 Constantes.listaPuntajes = null ;
-Debug.Log ("lista limpia");
+
 
 }
 
@@ -85,7 +85,7 @@ Debug.Log ("lista limpia");
 	}
 	
 	void SpawnRacers(){
-		Debug.Log ("" + Constantes.carselected);
+		
         //Constantes.carselected = "CARS/F1_Black_player";
         playerCar = (GameObject)Resources.Load("CARS/AutoJugador" + Constantes.carselected , typeof(GameObject));//GameObject.Find ("F1_red_AI");
 		if(!playerCar){
