@@ -22,4 +22,7 @@
     <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider1617825028466938" android:exported="true" />
     <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
   </application>
+  <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
 </manifest>
